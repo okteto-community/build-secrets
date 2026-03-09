@@ -1,0 +1,7 @@
+## Build-secrets test
+
+This repo demonstrates how to pass a secret file to a BuildKit build using Okteto.
+It uses a template file .minimus_token that contains the placeholder $MINIMUS_TOKEN. Okteto will expand that at build time and provide the secret as /run/secrets/minimus_token to the RUN --mount=type=secret step.
+
+
+NOTE: .minimus_token must contain the literal $MINIMUS_TOKEN placeholder (do not commit real secrets).
