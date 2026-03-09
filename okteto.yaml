@@ -1,0 +1,7 @@
+build:
+  test-secret:
+    context: .
+    dockerfile: Dockerfile
+    secrets:
+      minimus_token: .minimus_token
+
