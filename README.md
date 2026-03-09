@@ -9,7 +9,7 @@ NOTE: .minimus_token must contain the literal $MINIMUS_TOKEN placeholder (do not
 
 ## How to test
 
-### Make sure you have Okteto CLI logged in and the Okteto context set (example: okteto context use <your-context>).
+1. Make sure you have Okteto CLI logged in and the Okteto context set (example: okteto context use <your-context>).
 
 Provide MINIMUS_TOKEN to the build environment. Two options:
 
@@ -18,7 +18,7 @@ Provide MINIMUS_TOKEN to the build environment. Two options:
 
 
 
-### Run the build with debug/plain output and no cache:
+2.  Run the build with debug/plain output and no cache:
 
 ```okteto build -l debug --progress plain --no-cache```
 
